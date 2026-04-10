@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uygulamalar | Alaz Development</title>
+    <meta name="description" content="Alaz Development tarafından geliştirilmiş olan mobil ve web uygulamalarımız.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- İkonlar (Phosphor Icons - Hafif ve modern) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .app-card {
+            background: var(--bg-color-light);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: left;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            height: 100%;
+        }
+
+        .app-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 87, 34, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 87, 34, 0.1);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: var(--gradient-flame);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            box-shadow: 0 10px 20px var(--accent-orange-glow);
+        }
+
+        .app-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .app-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: auto;
+            flex-wrap: wrap;
+        }
+
+        .store-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .store-btn:hover {
+            background: var(--gradient-flame);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px var(--accent-orange-glow);
+        }
+
+        .store-btn i {
+            font-size: 1.2rem;
+        }
+
+        .legal-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .legal-links a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .legal-links a:hover {
+            color: var(--accent-orange);
+            text-decoration-color: var(--accent-orange);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/img/logo.png" alt="Alaz Development Logo">
+                <span class="logo-text text-gradient">Alaz<span style="color: white">Dev</span></span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hizmetler">Hizmetlerimiz</a></li>
+                    <li><a href="index.html">Projeler</a></li>
+                    <li><a href="uygulamalar.html" style="color: white">Uygulamalar</a></li>
+                    <li><a href="gizlilik-sozlesmesi.html">Gizlilik Sözleşmesi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main class="legal-page" style="padding-bottom: 6rem;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 4rem;">
+                <h1 class="section-title">Uygulamalarımız</h1>
+                <p class="section-desc">Geliştirmiş olduğumuz ve marketlerde yayında olan mobil uygulamalarımızı
+                    aşağıdan inceleyebilirsiniz.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Dini Ajandam Card -->
+                <div class="app-card">
+                    <div class="app-header">
+                        <div class="app-icon">
+                            <i class="ph ph-book-open"></i>
+                        </div>
+                        <h3 class="app-title">Dini Ajandam</h3>
+                    </div>
+                    <p style="color: var(--text-muted); line-height: 1.6;">Dini ibadetlerinizi düzenli bir şekilde takip
+                        etmenizi sağlayan, motive edici ve pratik ajanda uygulaması.</p>
+
+                    <div class="legal-links">
+                        <a href="dini-ajandam-gizlilik.html">Gizlilik Sözleşmesi</a>
+                        <a href="dini-ajandam-kosullar.html">Kullanım Koşulları</a>
+                    </div>
+
+                    <div class="app-links">
+                        <a href="#" class="store-btn">
+                            <i class="ph ph-google-play-logo"></i> Play Store
+                        </a>
+                        <!-- <a href="#" class="store-btn">
+                            <i class="ph ph-app-store-logo"></i> App Store
+                        </a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-wrapper" style="margin-bottom: 1rem;">
+                        <img src="assets/img/logo.png" alt="Alaz Development Logo" style="height: 32px">
+                        <span class="logo-text text-gradient">Alaz<span
+                                style="color: white; font-size: 1.2rem;">Dev</span></span>
+                    </a>
+                    <p>Hayatınızı kolaylaştırırken eğlence katan, pratik ve yenilikçi mobil deneyimlerle her anınızı
+                        daha verimli kılın!</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="index.html#hizmetler">Mobil Uygulama</a></li>
+                        <li><a href="index.html#hizmetler">Web Uygulama</a></li>
+                        <li><a href="index.html#hizmetler">UI/UX Tasarım</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Yasal</h4>
+                    <ul>
+                        <li><a href="gizlilik-sozlesmesi.html">Gizlilik Sözleşmesi</a></li>
+                        <li><a href="#">Kullanım Koşulları</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alaz Development. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
