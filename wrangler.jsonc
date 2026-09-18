@@ -3,11 +3,13 @@
   "name": "www",
   "compatibility_date": "2024-09-23",
 
+  // workers.dev adresini tekrar aktif eden ayar
+  "workers_dev": true,
+
   "assets": {
     "directory": "./"
   },
 
-  // /* kaldırıldı, sadece saf domain yazıldı
   "routes": [
     { "pattern": "www.alazdevelopment.com", "custom_domain": true },
     { "pattern": "alazdevelopment.com", "custom_domain": true }
