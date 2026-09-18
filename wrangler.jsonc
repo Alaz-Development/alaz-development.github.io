@@ -3,15 +3,14 @@
   "name": "www",
   "compatibility_date": "2024-09-23",
 
-  // HTML ve CSS/img klasörlerinin bulunduğu ana dizin
   "assets": {
     "directory": "./"
   },
 
-  // Alan adlarını her deploy'da kalıcı bağlayan kısım
+  // /* kaldırıldı, sadece saf domain yazıldı
   "routes": [
-    { "pattern": "www.alazdevelopment.com/*", "custom_domain": true },
-    { "pattern": "alazdevelopment.com/*", "custom_domain": true }
+    { "pattern": "www.alazdevelopment.com", "custom_domain": true },
+    { "pattern": "alazdevelopment.com", "custom_domain": true }
   ],
 
   "observability": {
